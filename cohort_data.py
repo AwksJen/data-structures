@@ -2,9 +2,16 @@
 
 import cohort_data.txt
 
-def helper_function(filename):
-    # turn this into a list of tuples
-    return
+def txt_into_tuples(filename):
+    # turn files into a List of tuples
+    data_tuples = []
+
+    for line in text_file:
+        line = text_file.split("\n")
+        line = tuple(line)
+        data_tuples.append(line)
+
+    return cohort_data_tuples
 
 def unique_houses(filename):
     """TODO: Return a set of student houses.
@@ -82,7 +89,6 @@ def hogwarts_by_house(filename):
     # students/instructors last name
 
     for line in everyone_txt:
-        
 
 
     all_hogwarts = [dumbledores_army,
