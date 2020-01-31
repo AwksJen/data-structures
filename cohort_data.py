@@ -1,5 +1,10 @@
 """Functions to parse a file containing student data."""
 
+import cohort_data.txt
+
+def helper_function(filename):
+    # turn this into a list of tuples
+    return
 
 def unique_houses(filename):
     """TODO: Return a set of student houses.
@@ -61,6 +66,8 @@ def hogwarts_by_house(filename):
 
     """
 
+    everyone_txt = open(cohort_data.txt)
+
     all_hogwarts = []
     dumbledores_army = []
     gryffindor = []
@@ -70,7 +77,23 @@ def hogwarts_by_house(filename):
     ghosts = []
     instructors = []
 
-    # Code goes here
+    # here's our loop
+    # ghosts need first name
+    # students/instructors last name
+
+    for line in everyone_txt:
+        
+
+
+    all_hogwarts = [dumbledores_army,
+                    gryffindor,
+                    hufflepuff,
+                    ravenclaw,
+                    slytherin,
+                    ghosts,
+                    instructors]
+
+    everyone_txt.close()
 
     return all_hogwarts
 
